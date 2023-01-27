@@ -1,0 +1,32 @@
+body{
+    background: #252525;
+    color: #f1f1f1;
+}
+
+.container{
+    box-shadow: 0 0 10px #f1f1f1;
+    width: 98%;
+    padding: 1%;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    box-shadow: 0 4px 0 #f1f1f1;
+}
+
+.header > .btn-group{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.header > .btn-group > .btn{
+    padding: 10px;
+    background: #8a8686;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 5px;
+    width: 60px;
+    text-align: center;
+}

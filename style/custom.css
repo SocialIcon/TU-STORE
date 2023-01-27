@@ -1,0 +1,331 @@
+body{
+    background: #08599b;
+    color: #f1f1f1;
+    display: block;
+    overflow: hidden;
+    user-zoom: false;
+}
+
+.container{
+    display: block;
+}
+
+.container > img{
+    width: 60%;
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    animation: flipAndDown 1s cubic-bezier(0.14, 0.91, 0.32, 1.28) 0.5ms 1 forwards;
+}
+
+@keyframes flipAndDown {
+    to{
+        top: 30%;
+        transform: rotateX(-360deg);
+        animation: rotated 1s cubic-bezier(0.14, 0.91, 0.32, 1.28) 0.5ms 1 forwards;
+    }
+        to{
+            transform: rotate(1turn);
+        }
+}
+
+.formDivOuterIN{
+    box-shadow: 0 0 10px #f1f1f1;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3%;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    border-radius: 10px;
+}
+
+.headerSection{
+    text-align: center;
+}
+
+.user{
+    width: 96%;
+}
+
+.user > input{
+    outline: none;
+    padding: 3%;
+    width: inherit;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+.pass{
+    width: 96%;
+}
+
+.pass > input{
+    outline: none;
+    padding: 3%;
+    width: inherit;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+.signInBtn{
+    background: #252525;
+    box-shadow: 0 0 10px #f1f1f1;
+    outline: none;
+    padding: 3%;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: auto 90px;
+    width: 40%;
+    color: #f1f1f1;
+}
+
+.signUrlText{
+    color: #f1f1f1;
+    text-align: center;
+    padding: 2%;
+}
+
+.signUrlText > a{
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+.formDivOuterUP{
+    box-shadow: 0 0 10px #f1f1f1;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3%;
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    border-radius: 10px;
+}
+
+.userName{
+    width: 96%;
+}
+
+.userName > input{
+    outline: none;
+    padding: 3%;
+    width: inherit;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+.userEmail{
+    width: 96%;
+}
+
+.userEmail > input{
+    outline: none;
+    padding: 3%;
+    width: inherit;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+.userPass{
+    width: 96%;
+}
+
+.userPass > input{
+    outline: none;
+    padding: 3%;
+    width: inherit;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+.userDeptt{
+    width: 96%;
+}
+
+.userDeptt > input{
+    outline: none;
+    padding: 3%;
+    width: inherit;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+.userEnrol{
+    width: 96%;
+}
+
+.userEnrol > input{
+    outline: none;
+    padding: 3%;
+    width: inherit;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+.signUpBtn{
+    background: #252525;
+    box-shadow: 0 0 10px #f1f1f1;
+    outline: none;
+    padding: 3%;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: auto 90px;
+    width: 40%;
+    color: #f1f1f1;
+
+}
+
+
+
+
+
+
+
+.search-bar{
+    box-shadow: 0 0 10px #f1f1f1;
+    width: 92%;
+    margin: 0 auto;
+    padding: 1%;
+    position: absolute;
+    top: 1%;
+    left: 0%;
+    right: 0%;
+    border-radius: 10px;
+}
+
+input[type="search"]{
+    padding: 3%;
+    width: 75%;
+    font-size: medium;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+}
+
+input[value="Search"]{
+    padding: 3%;
+    width: 23.5%;
+    font-size: medium;
+    outline: none;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    
+}
+
+.shop-list{
+    box-shadow: 0 0 10px #f1f1f1;
+    width: 93%;
+    height: 75%;
+    margin: 0 auto;
+    padding: 3%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    border-radius: 10px;
+    overflow: scroll;
+
+}
+
+.btn-bar{
+    box-shadow: 0 0 10px #f1f1f1;
+    width: 93%;
+    margin: 0 auto;
+    padding: 3%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    border-radius: 10px;
+    display: flex;
+    background: #252525;
+}
+
+.round{
+    padding: 5%;
+    box-shadow: 0 0 10px #f1f1f1;
+    border-radius: 50px;
+}
+
+.feedback-btn,
+.usr-btn,
+.shop-btn{
+    width: 20px;
+    height: 20px;
+    font-size: medium;
+    color: #f1f1f1;
+    background: #252525;
+}
+
+
+
+.item-details{
+    display: flex;
+    height: 100px;
+    background: #252525;
+    color: #f1f1f1;
+    border-radius: 10px;
+}
+
+
+
+.image-section > img{
+    width: 100px;
+}
+
+.about-section{
+    width: 49%;
+}
+
+
+.qty-section{
+    display: flex;
+}
+
+.qty-section > .qty-counter{
+    background: #f1f1f1;
+    border-radius: 10px;
+    color: #252525;
+    font-size: 18pt;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+    margin: auto 5px;
+}
+
+.qty-section > .qty-setter{
+    cursor: pointer;
+    user-select: none;
+}
+
+.qty-section > .qty-setter > .increment,
+.qty-section > .qty-setter > .decrement{
+    background: #676e74;
+    padding: 11.5px;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.qty-section > .qty-setter > .increment{
+    border-top-right-radius: 10px;
+}
+
+.qty-section > .qty-setter > .decrement{
+    border-bottom-right-radius: 10px;
+}
+
+.item-review > .item{
+    text-align: center;
+}
+
+.item-review > .item-review-star{
+    cursor: pointer;
+    user-select: none;
+}
