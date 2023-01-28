@@ -17,43 +17,25 @@
 
     <div class="search-bar">
         <form action="" method="post">
-            <input type="search" placeholder="Item Name / Price" autofocus>
+            <input type="search" placeholder="Item Name" autofocus>
             <input type="submit" value="Search">
         </form>
     </div>
 
     <div class="shop-list">
-        <?php require "shop-list.php"; ?>
+        <?php // require "feedback-list.php"; ?>
         <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
+        <?php // require "feedback-list.php"; ?>
     </div>
 
     <?php require "../menu-btn/index.php"; ?>
-
     <script src="https://kit.fontawesome.com/83a479628d.js" crossorigin="anonymous"></script>
     <script src="../js/script-related-style.js"></script>
 
+    <script>
+        // setTimeout(() => {
+        //     window.open("auth/signIn","_self")
+        // }, 3000);
+    </script>
 </body>
 </html>

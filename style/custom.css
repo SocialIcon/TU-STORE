@@ -250,6 +250,7 @@ input[value="Search"]{
     padding: 5%;
     box-shadow: 0 0 10px #f1f1f1;
     border-radius: 50px;
+    text-align: center;
 }
 
 .feedback-btn,
@@ -321,6 +322,10 @@ input[value="Search"]{
     border-bottom-right-radius: 10px;
 }
 
+.item-review{
+    width: 50%;
+}
+
 .item-review > .item{
     text-align: center;
 }
@@ -328,4 +333,10 @@ input[value="Search"]{
 .item-review > .item-review-star{
     cursor: pointer;
     user-select: none;
+    text-align: center;
+}
+
+.totalUserReview{
+    margin: auto 0;
+    text-align: center;
 }

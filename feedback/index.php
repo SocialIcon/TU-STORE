@@ -24,21 +24,11 @@
 
     <div class="shop-list">
         <?php require "feedback-list.php"; ?>
+        <br>
+        <?php require "feedback-list.php"; ?>
     </div>
 
-    <div class="btn-bar">
-        <div class="round feedback-btn">
-            <i class="fa-brands fa-product-hunt"></i>
-        </div><hr>
-        <div class="round">2</div><hr>
-        <div class="round shop-btn">
-            <i class="fa-solid fa-shop"></i>
-        </div><hr>
-        <div class="round">4</div><hr>
-        <div class="round usr-btn">
-            <i class="fas fa-user"></i>
-        </div>
-    </div>
+    <?php require "../menu-btn/index.php"; ?>
     <script src="https://kit.fontawesome.com/83a479628d.js" crossorigin="anonymous"></script>
     <script src="../js/script-related-style.js"></script>
 
