@@ -43,11 +43,18 @@ if($conn){
                 <h1>Successfully Loginned!</h1>
             <?php
         }else{
-            echo "Error";
+            ?>
+                <script>
+                    alert("Error");
+                    setTimeout(() => {
+                        window.open("index.php","_self")
+                    }, 100);
+                </script>
+            <?php
         }
     }
 }else{
-    mysqli_connect_error();
+    //mysqli_connect_error();
 }
 
 ?>
