@@ -22,18 +22,26 @@ $passwordUser = $_POST['pass'];
 
 //mysqli_query($conn, $insertData);
 
-$table = "SELECT `Email` FROM `customer_details` where `Email`='$email'";
+$tableEmail = mysqli_query($conn,"SELECT `Email` FROM `customer_details` where `Email`='$email'");
 
+$resultEmail = mysqli_fetch_array($tableEmail)[0];
 
-print_r(mysqli_query($conn, $table));
+$tablePass = mysqli_query($conn,"SELECT `Password` FROM `customer_details` where `Email`='$email'");
+
+$resultPass = mysqli_fetch_array($tablePass)[0];
+
+// print($resultEmail);
+// print($resultPass);
 //mysqli_query($conn, "SELECT  `Password` FROM `customer_details` where `Password`='$passwordUser' and `Email`='$email'");
 
 
 
 if($conn){
     if(isset($_POST['signInBtn'])){
-        if($email == mysqli_query($conn, "SELECT  `Email` FROM `customer_details` where `Email`='$email'") && $passwordUser == mysqli_query($conn, "SELECT  `Password` FROM `customer_details` where `Password`='$passwordUser'")){
-            echo "Signed Successfuly!";
+        if($email == $resultEmail && $passwordUser == $resultPass){
+            ?>
+                <h1>Successfully Loginned!</h1>
+            <?php
         }else{
             echo "Error";
         }
