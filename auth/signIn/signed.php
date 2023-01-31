@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -39,15 +40,29 @@ $resultPass = mysqli_fetch_array($tablePass)[0];
 if($conn){
     if(isset($_POST['signInBtn'])){
         if($email == $resultEmail && $passwordUser == $resultPass){
+            $userDetailByQuery = mysqli_query($conn,"SELECT * FROM `customer_details` where `Email`='$email' and `Password`='$passwordUser'");
+            $userData = mysqli_fetch_array($userDetailByQuery);
+            //print($userData[4]);
+            //print($userData[2]);
+            $_SESSION["email"] = "$email";
+            $_SESSION["fullname"] = "$userData[1]";
+            $_SESSION["department"] = "$userData[4]";
+            $_SESSION["enrollment"] = "$userData[5]";
+
             ?>
-                <h1>Successfully Loginned!</h1>
+                <i class="fas fa-circle-o-notch" style="font-size: 20pt; height: 50px; width: 50px;"></i>
+                <script>
+                     setTimeout(() => {
+                         window.open("../../shop/","_self");
+                     }, 10);
+                </script>
             <?php
         }else{
             ?>
                 <script>
                     alert("Error");
                     setTimeout(() => {
-                        window.open("index.php","_self")
+                        window.open("index.php","_self");
                     }, 100);
                 </script>
             <?php

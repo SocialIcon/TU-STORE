@@ -1,3 +1,7 @@
+<?php
+    ob_start();
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +30,35 @@
         <?php // require "feedback-list.php"; ?>
         <br>
         <?php // require "feedback-list.php"; ?>
+
+        <?php
+            echo 'Hi, ' . $_SESSION["fullname"];
+            echo "<br>";
+            echo "Your Department : ".$_SESSION["department"];
+            echo "<br>";
+            echo "Your Enrollment No. : ".$_SESSION["enrollment"];
+        ?>
+
+        <form method="post">
+            <input type="submit" value="Log Out" name="logout">
+        </form>
+
+        <?php
+
+            if(array_key_exists('logout',$_POST)){
+                logoutsession();
+                gotoSignIn();
+            }
+            function gotoSignIn() {
+                
+                header("Location: ../auth/signIn/");
+                
+            }
+            function logoutsession(){
+                unset($_SESSION["email"],$_SESSION["fullname"],$_SESSION["department"],$_SESSION["enrollment"]);
+                session_destroy();
+            }
+        ?>
     </div>
 
     <?php require "../menu-btn/index.php"; ?>
@@ -39,3 +72,7 @@
     </script>
 </body>
 </html>
+
+<?php
+    ob_end_flush();
+?>
