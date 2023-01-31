@@ -31,14 +31,10 @@
         <br>
         <?php // require "feedback-list.php"; ?>
 
-        <?php
-            echo 'Hi, ' . $_SESSION["fullname"];
-            echo "<br>";
-            echo "Your Department : ".$_SESSION["department"];
-            echo "<br>";
-            echo "Your Enrollment No. : ".$_SESSION["enrollment"];
-        ?>
-
+        <h1 style="text-align:center;"><?php echo $_SESSION["fullname"]; ?></h1>
+        <h3 style="text-align:center;"><?php echo $_SESSION["department"]; ?></h3>
+        <h3 style="text-align:center;"><?php echo $_SESSION["enrollment"]; ?></h3>
+        
         <form method="post">
             <input type="submit" value="Log Out" name="logout">
         </form>

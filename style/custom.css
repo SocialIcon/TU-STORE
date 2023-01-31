@@ -340,3 +340,19 @@ input[value="Search"]{
     margin: auto 0;
     text-align: center;
 }
+
+
+
+
+.makeFeedback{
+    width: max-content;
+    font-size: 18pt;
+    background: #002e0c9c;
+    padding: 15px 18px;
+    border-radius: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 110px;
+    user-select: none;
+    cursor: pointer;
+}

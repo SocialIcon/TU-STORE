@@ -23,34 +23,13 @@
     </div>
 
     <div class="shop-list">
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        <br>
-        <?php require "feedback-list.php"; ?>
-        
-
-        <?php require "make-feedback.php"; ?>
+        <form action="" method="post">
+            <div class="imageUserForFeedback">
+                <input type="file" name="" id="">
+            </div>
+            <div class="starsUserForFeedback"></div>
+            <div class="CommentUserForFeedback"></div>
+        </form>
     </div>
 
     <?php require "../menu-btn/index.php"; ?>
