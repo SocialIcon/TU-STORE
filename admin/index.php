@@ -8,7 +8,6 @@
     <style>
         <?php
             include "style/custom.css";
-            include "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
         ?>
     </style>
 </head>
@@ -19,16 +18,50 @@
                 <h2>TU STORE</h2>
             </div>
             <div class="btn-group">
-                <div class="btn home">Home</div>
-                <div class="btn item">Item</div>
-                <div class="btn order">Order</div>
-                <div class="btn history">History</div>
+                <form class="btn home" method="POST">
+                    <input type="submit" value="Home" name="home">
+                </form>
+                <form class="btn item" method="POST">
+                    <input type="submit" value="Item" name="item">
+                </form>
+                <form class="btn order" method="POST">
+                    <input type="submit" value="Order" name="order">
+                </form>
+                <form class="btn history" method="POST">
+                    <input type="submit" value="History" name="history">
+                </form>
             </div>
         </div>
-
+        <br>
         <div class="contents">
             <?php
-                require "item.php";
+                if (isset($_POST["home"])) {
+                    require "home.php";
+                }
+                
+                if (isset($_POST["item"])) {
+                    require "item.php";
+                }
+
+                if (isset($_POST["order"])) {
+                    require "order.php";
+                }
+                
+                if (isset($_POST["history"])) {
+                    require "history.php";
+                }
+            ?>
+
+            <?php
+                if(isset($_POST["new-item"])){
+                    require "home.php";
+                    require "new-item.php";
+                }
+
+                if(isset($_POST["update-item"])){
+                    require "home.php";
+                    require "update-item.php";
+                }
             ?>
         </div>
     </div>

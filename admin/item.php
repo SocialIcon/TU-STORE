@@ -1,21 +1,26 @@
 <div class="item-details">
-    <div class="image-section">
-        <img src="../image/Tripura_University_Logo.png" alt="item-name-image">
-    </div>
-    <div class="item-review">
-        <div class="item">
-            <h3>Tea</h3>
-        </div>
-        <div class="item-review-star">
-            <i class="fas fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-        </div>
-    </div>
-    <div class="totalUserReview">
-        <i class="fa fa-user"></i>
-        <i>234</i>
-    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>S.NO.</th>
+                <th>IMAGE</th>
+                <th>ITEM</th>
+                <th>QTY.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="image/Tripura_University_Logo.png" alt="item_image"></td>
+                <td>Tea djfg sjgf sjfh g</td>
+                <td>320</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="image/Tripura_University_Logo.png" alt="item_image"></td>
+                <td>Tea</td>
+                <td>32</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

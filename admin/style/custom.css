@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
 body{
     background: #252525;
     color: #f1f1f1;
@@ -21,45 +23,59 @@ body{
     margin: 0 auto;
 }
 
-.header > .btn-group > .btn{
-    padding: 10px;
+.header > .btn-group > .btn > input[type="submit"],
+.contents > .itemCreate > input[type="submit"]{
+    padding: 15px;
     background: #8a8686;
     cursor: pointer;
     user-select: none;
     margin: 0 5px;
-    width: 60px;
     text-align: center;
+    border: none;
+    color: #f1f1f1;
+    font-weight: bold;
 }
 
 
 .item-details{
     display: flex;
-    height: 100px;
     background: #252525;
     color: #f1f1f1;
     border-radius: 10px;
+    box-shadow: 0 0 5px #f1f1f1;
 }
 
-.image-section > img{
+.item-details > table{
+    width: 100%;
+    text-align: center;
+}
+
+.item-details > table > tbody > tr > td > img{
     width: 100px;
 }
 
-.item-review{
-    width: 50%;
+
+
+.formOfItem{
+    padding: 5px;
 }
 
-.item-review > .item{
-    text-align: center;
+.formOfItem > .imagePreview{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    box-shadow: 0 0 7px #8a8686;
 }
 
-.item-review > .item-review-star{
-    cursor: pointer;
-    user-select: none;
-    text-align: center;
-    
+.formOfItem > .imagePreview > img{
+    width: 100%;
+    height: 100%;
 }
 
-.totalUserReview{
-    margin: auto 0;
-    text-align: center;
+.formOfItem > form > div > input{
+    padding: 10px;
+    width: 93%;
+    border-radius: 4px;
+    outline: none;
+    font-size: medium;
 }

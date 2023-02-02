@@ -1,3 +1,12 @@
+<?php
+    error_reporting(0);
+    ob_start();
+    session_start();
+
+    if($_SESSION["fullname"] != NULL){
+        header("Location: shop/");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,3 +34,7 @@
     </script>
 </body>
 </html>
+
+<?php
+    ob_end_flush();
+?>
