@@ -27,8 +27,12 @@
             <div class="imageUserForFeedback">
                 <input type="file" name="" id="">
             </div>
-            <div class="starsUserForFeedback"></div>
-            <div class="CommentUserForFeedback"></div>
+            <div class="starsUserForFeedback">
+                <input type="star">
+            </div>
+            <div class="CommentUserForFeedback">
+                <textarea name="commentAsFeedback" id="" cols="30" rows="10"></textarea>
+            </div>
         </form>
     </div>
 

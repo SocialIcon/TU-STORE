@@ -30,3 +30,36 @@ body{
     width: 60px;
     text-align: center;
 }
+
+
+.item-details{
+    display: flex;
+    height: 100px;
+    background: #252525;
+    color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.image-section > img{
+    width: 100px;
+}
+
+.item-review{
+    width: 50%;
+}
+
+.item-review > .item{
+    text-align: center;
+}
+
+.item-review > .item-review-star{
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    
+}
+
+.totalUserReview{
+    margin: auto 0;
+    text-align: center;
+}

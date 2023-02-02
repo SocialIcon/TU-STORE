@@ -8,6 +8,7 @@
     <style>
         <?php
             include "style/custom.css";
+            include "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
         ?>
     </style>
 </head>
@@ -27,7 +28,7 @@
 
         <div class="contents">
             <?php
-                require "home.php";
+                require "item.php";
             ?>
         </div>
     </div>
