@@ -1,3 +1,7 @@
+<?php
+    ob_start();
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,31 +27,37 @@
     </div>
 
     <div class="shop-list">
+    <?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "tu_store";
+
+    if($_SESSION['fullname']!=NULL){
+
+    $conn = mysqli_connect("$servername", "$username", "$password");
+    mysqli_select_db($conn, "$dbname");
+
+    $displayquery = "SELECT * FROM `storage_item`";
+
+    $querydisplay = mysqli_query($conn, $displayquery);
+
+    ?>
+
+    <?php
+
+
+    while($result = mysqli_fetch_array($querydisplay)){
+        ?>
         <?php require "shop-list.php"; ?>
         <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
-        <br>
-        <?php require "shop-list.php"; ?>
+
+        <?php
+    }
+}else{
+    error_reporting();
+}
+?>
     </div>
 
     <?php require "../menu-btn/index.php"; ?>
@@ -57,3 +67,7 @@
 
 </body>
 </html>
+
+<?php
+    ob_end_flush();
+?>

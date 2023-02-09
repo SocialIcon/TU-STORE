@@ -2,21 +2,24 @@
     <div class="imagePreview">
         <img src="image/Tripura_University_Logo.png" alt="item-image" id="previewImage">
     </div><br>
-    <form action="" method="post">
+    <form action="new-item-inserted.php" method="post" enctype="multipart/form-data">
         <div class="itemimage">
-            <input type="text" id="imageUrl" onchange="previewed();">
+            <input type="file" id="imageUrl" name="itemImage" onchange="previewed();" required>
         </div>
         <div class="item">
-            <input type="text" placeholder="Item Name *" required>
+            <input type="text" name="itemName" placeholder="Item Name *" required>
         </div>
         <div class="price">
-            <input type="number" placeholder="price/item *" required>
+            <input type="number" name="itemRate" placeholder="price/item *" required>
         </div>
         <div class="qty">
-            <input type="number" placeholder="Qty. *" required>
+            <input type="number" name="itemQty" placeholder="Qty. *" required>
         </div>
-        <div class=""></div>
-        <input type="submit" value="Store">
+        <div class="itemAbout">
+            <textarea name="itemAbout" cols="30" rows="10" placeholder="( Optional Area ) - You can add some details also"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Store" name="store">
     </form>
 </div>
 
